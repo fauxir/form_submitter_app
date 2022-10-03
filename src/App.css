@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1125px) {
   body {
     font-size: 16px;
     font-family: "Space Grotesk", sans-serif;
     font-weight: 500;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
   }
 
   .App {
@@ -24,6 +28,11 @@
 
   .img-mobile-banner {
     width: 100%;
+    display: inline;
+  }
+
+  .img-desktop-banner {
+    display: none;
   }
 
   .cards-wrapper {
@@ -250,7 +259,7 @@
   }
 }
 
-@media screen and (min-width: 810px) {
+@media screen and (min-width: 1125px) {
   body {
     font-size: 16px;
     font-family: "Space Grotesk", sans-serif;
@@ -259,96 +268,119 @@
 
   .App {
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  #root {
+    width: 100%;
+    height: 100vh;
   }
 
   /* Hero section */
 
   .mobile-banner-container {
-    height: 18rem;
-  }
-
-  .mobile-banner {
-    height: 13rem;
-    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .img-mobile-banner {
     width: 100%;
+    display: none;
+  }
+
+  .mobile-hero {
+    height: 100%;
+    width: 30%;
+  }
+
+  .mobile-banner {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
   }
 
   .cards-wrapper {
     position: relative;
-    margin-left: 5%;
-    width: 90%;
-    height: 17.5rem;
-    top: -11rem;
+    width: 2rem;
+    height: 10rem;
   }
 
   .card-back {
     position: relative;
-    left: 1rem;
+    width: 10rem;
+    left: -10rem;
+    top: 5rem;
   }
 
   .card-back-number {
     position: relative;
-    top: -4.3rem;
-    right: -13.9rem;
+    top: 7.3rem;
+    right: -15.5rem;
     color: rgb(255, 255, 255);
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .card-front {
     position: relative;
-    top: -12.2rem;
-    left: -1.7rem;
+    top: 0rem;
+    margin-top: -40rem;
+    left: -17rem;
+    width: 27rem;
   }
 
   .card-front-size {
-    max-width: 16rem;
+    max-width: 25rem;
   }
 
   .card-back-size {
-    max-width: 16rem;
+    max-width: 25rem;
   }
 
   .card-front-wrapper {
     position: relative;
-    height: 8rem;
+    height: 15rem;
     width: 100%;
-    top: 8.4rem;
-    right: -1.8rem;
+    top: 19rem;
+    right: 0rem;
   }
 
   .card-front-logo {
     position: relative;
-    top: 0.5rem;
-    right: 0.3rem;
-    height: 1.8rem;
+    top: -2.5rem;
+    right: -2.4rem;
+    height: 2.8rem;
   }
 
   .card-front-name {
     position: relative;
-    top: 4.5rem;
-    right: 6rem;
+    top: 4rem;
+    right: 7.3rem;
     color: white;
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .card-front-number {
     position: relative;
-    top: 4rem;
-    right: 3.6rem;
-    width: 10rem;
+    top: 3rem;
+    right: 2.6rem;
     color: white;
-    font-size: 19px;
+    font-size: 26px;
+    letter-spacing: 3px;
   }
 
   .card-front-exp {
     position: relative;
-    top: 3.3rem;
-    right: -3.6rem;
+    top: 2.5rem;
+    right: -9.1rem;
     color: white;
-    font-size: 10px;
+    font-size: 14px;
   }
 
   /* Input section */
@@ -374,6 +406,7 @@
   .input-form {
     display: flex;
     justify-content: center;
+    margin-right: 10%;
   }
 
   .wrapper {
