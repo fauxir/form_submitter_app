@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
 
-
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 810px) {
   body {
     font-size: 16px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-weight: 500;
   }
 
@@ -15,34 +13,33 @@
 
   /* Hero section */
 
-  .mobile-banner-container{
-   height: 18rem;
+  .mobile-banner-container {
+    height: 18rem;
   }
-  
-  .mobile-banner{
+
+  .mobile-banner {
     height: 13rem;
     overflow: hidden;
   }
 
-  .img-mobile-banner{
+  .img-mobile-banner {
     width: 100%;
   }
 
-  .cards-wrapper{
+  .cards-wrapper {
     position: relative;
     margin-left: 5%;
     width: 90%;
     height: 17.5rem;
     top: -11rem;
-    
   }
 
-  .card-back{
+  .card-back {
     position: relative;
     left: 1rem;
   }
 
-  .card-back-number{
+  .card-back-number {
     position: relative;
     top: -4.3rem;
     right: -13.9rem;
@@ -50,21 +47,21 @@
     font-size: 10px;
   }
 
-  .card-front{
+  .card-front {
     position: relative;
     top: -12.2rem;
     left: -1.7rem;
   }
 
-  .card-front-size{
+  .card-front-size {
     max-width: 16rem;
   }
 
-  .card-back-size{
+  .card-back-size {
     max-width: 16rem;
   }
 
-  .card-front-wrapper{
+  .card-front-wrapper {
     position: relative;
     height: 8rem;
     width: 100%;
@@ -72,37 +69,37 @@
     right: -1.8rem;
   }
 
-  .card-front-logo{
+  .card-front-logo {
     position: relative;
     top: 0.5rem;
     right: 0.3rem;
     height: 1.8rem;
   }
 
-  .card-front-name{
+  .card-front-name {
     position: relative;
     top: 4.5rem;
     right: 6rem;
     color: white;
     font-size: 10px;
-  } 
-  
-  .card-front-number{
+  }
+
+  .card-front-number {
     position: relative;
     top: 4rem;
     right: 3.6rem;
     width: 10rem;
     color: white;
     font-size: 19px;
-  } 
+  }
 
-  .card-front-exp{
+  .card-front-exp {
     position: relative;
     top: 3.3rem;
     right: -3.6rem;
     color: white;
     font-size: 10px;
-  } 
+  }
 
   /* Input section */
 
@@ -118,7 +115,257 @@
     margin-top: 2rem;
   }
 
-  .confirm-btn:hover{
+  .confirm-btn:hover {
+    cursor: pointer;
+    background-color: rgb(179, 179, 179);
+    color: black;
+    box-shadow: 5px 5px 5px rgb(88, 88, 88);
+  }
+
+  .input-form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrapper {
+    width: 90%;
+    margin: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .card-expiry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 100%;
+    height: 5rem;
+  }
+
+  .text-card-expiry {
+    width: 12.5rem;
+    height: 4rem;
+  }
+
+  .cvc-container {
+    margin-left: 0.5rem;
+    height: 4rem;
+  }
+
+  .cvc-label {
+    display: flex;
+    max-width: 10rem;
+  }
+
+  .cvc-input {
+    width: 96%;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    border: 1px;
+    border-style: solid;
+    color: rgb(155, 155, 155);
+    border-color: rgb(197, 197, 197);
+  }
+
+  .exp-label {
+    width: 9rem;
+  }
+
+  .exp-input {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
+  .exp-input-mm {
+    width: 5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    border: 1px;
+    border-style: solid;
+    color: rgb(155, 155, 155);
+    border-color: rgb(197, 197, 197);
+  }
+
+  .exp-input-yy {
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    border: 1px;
+    border-style: solid;
+    color: rgb(155, 155, 155);
+    border-color: rgb(197, 197, 197);
+  }
+
+  .name-container {
+    width: 100%;
+    height: 4rem;
+    text-align: left;
+  }
+
+  .name-input {
+    width: 98%;
+    height: 2.5rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    font-size: 18px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    border: 1px;
+    border-style: solid;
+    color: rgb(155, 155, 155);
+    border-color: rgb(197, 197, 197);
+  }
+
+  .number-container {
+    width: 100%;
+    height: 4rem;
+    text-align: left;
+    margin-top: 2rem;
+  }
+
+  .number-input {
+    width: 98%;
+    height: 2.5rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    font-size: 18px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    border: 1px;
+    border-style: solid;
+    color: rgb(155, 155, 155);
+    border-color: rgb(197, 197, 197);
+  }
+}
+
+@media screen and (min-width: 810px) {
+  body {
+    font-size: 16px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+  }
+
+  .App {
+    text-align: center;
+  }
+
+  /* Hero section */
+
+  .mobile-banner-container {
+    height: 18rem;
+  }
+
+  .mobile-banner {
+    height: 13rem;
+    overflow: hidden;
+  }
+
+  .img-mobile-banner {
+    width: 100%;
+  }
+
+  .cards-wrapper {
+    position: relative;
+    margin-left: 5%;
+    width: 90%;
+    height: 17.5rem;
+    top: -11rem;
+  }
+
+  .card-back {
+    position: relative;
+    left: 1rem;
+  }
+
+  .card-back-number {
+    position: relative;
+    top: -4.3rem;
+    right: -13.9rem;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+  }
+
+  .card-front {
+    position: relative;
+    top: -12.2rem;
+    left: -1.7rem;
+  }
+
+  .card-front-size {
+    max-width: 16rem;
+  }
+
+  .card-back-size {
+    max-width: 16rem;
+  }
+
+  .card-front-wrapper {
+    position: relative;
+    height: 8rem;
+    width: 100%;
+    top: 8.4rem;
+    right: -1.8rem;
+  }
+
+  .card-front-logo {
+    position: relative;
+    top: 0.5rem;
+    right: 0.3rem;
+    height: 1.8rem;
+  }
+
+  .card-front-name {
+    position: relative;
+    top: 4.5rem;
+    right: 6rem;
+    color: white;
+    font-size: 10px;
+  }
+
+  .card-front-number {
+    position: relative;
+    top: 4rem;
+    right: 3.6rem;
+    width: 10rem;
+    color: white;
+    font-size: 19px;
+  }
+
+  .card-front-exp {
+    position: relative;
+    top: 3.3rem;
+    right: -3.6rem;
+    color: white;
+    font-size: 10px;
+  }
+
+  /* Input section */
+
+  .confirm-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 3rem;
+    border-radius: 7px;
+    margin-top: 2rem;
+  }
+
+  .confirm-btn:hover {
     cursor: pointer;
     background-color: rgb(179, 179, 179);
     color: black;
@@ -165,7 +412,7 @@
     margin-top: 0.5rem;
     border-radius: 5px;
     font-size: 18px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-weight: 500;
     border: 1px;
     border-style: solid;
@@ -186,10 +433,10 @@
   .exp-input-mm {
     width: 5rem;
     height: 2.5rem;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     border-radius: 5px;
     font-size: 18px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-weight: 500;
     border: 1px;
     border-style: solid;
@@ -202,7 +449,7 @@
     height: 2.5rem;
     border-radius: 5px;
     font-size: 18px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-weight: 500;
     border: 1px;
     border-style: solid;
@@ -216,13 +463,13 @@
     text-align: left;
   }
 
-  .name-input{
+  .name-input {
     width: 98%;
     height: 2.5rem;
     border-radius: 5px;
     margin-top: 0.5rem;
     font-size: 18px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-weight: 500;
     border: 1px;
     border-style: solid;
@@ -230,25 +477,24 @@
     border-color: rgb(197, 197, 197);
   }
 
-  .number-container{
+  .number-container {
     width: 100%;
     height: 4rem;
     text-align: left;
     margin-top: 2rem;
   }
 
-  .number-input{
+  .number-input {
     width: 98%;
     height: 2.5rem;
     border-radius: 5px;
     margin-top: 0.5rem;
     font-size: 18px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-weight: 500;
     border: 1px;
     border-style: solid;
     color: rgb(155, 155, 155);
     border-color: rgb(197, 197, 197);
   }
-
 }

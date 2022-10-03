@@ -27,7 +27,7 @@ function banner() {
                 src="./card-logo.svg"
                 alt=""
               ></img>
-              <span className="card-front-number">0000  0000  0000  0000</span>
+              <span className="card-front-number">0000 0000 0000 0000</span>
               <div className="card-front-name">JANE APPLESEED</div>
               <span className="card-front-exp">00/00</span>
             </div>
