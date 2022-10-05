@@ -1,18 +1,24 @@
 import React from "react";
 import { useState } from "react";
 
-function InputFields() {
+function InputFields({ showTy }) {
   const [cardHolderName, setCardHolderName] = useState("");
   const [cardNumber, setCardNumber] = useState("");
   const [expMm, setExpMm] = useState("");
   const [expY, setExpY] = useState("");
   const [cvc, setCvc] = useState("");
   const [cardDetails, setCardDetails] = useState([]);
-  const[focused, setFocused] = useState(false);
+  const [focused, setFocused] = useState(false);
 
   const handleFocus = (e) => {
     setFocused(true);
-  }
+  };
+
+  const callShowTy = showTy;
+
+  const func = () => {
+    return callShowTy;
+  };
 
   const sendToDb = () => {
     setCardDetails([
@@ -56,14 +62,16 @@ function InputFields() {
               }}
               className="name-input"
               placeholder="  e.g. Jane Appleseed"
-              pattern="^[A-Za-z]{4,16}$"
+              pattern="^[a-zA-Z0-9\s]+{4,16}$"
               onBlur={handleFocus}
-              focused= {focused.toString()}
+              focused={focused.toString()}
               required
               min="6"
               maxLength="30"
             ></input>
-            <span className="error-message">Name should be 4-16 characters</span>
+            <span className="error-message">
+              Name should be 4-16 characters
+            </span>
           </div>
           <div className="number-container">
             <label>CARD NUMBER</label>
@@ -75,7 +83,7 @@ function InputFields() {
               placeholder="  e.g. 1234 5678 9123 0000"
               pattern="[0-9]{16}"
               onBlur={handleFocus}
-              focused= {focused.toString()}
+              focused={focused.toString()}
               required
               min="16"
               maxLength="16"
@@ -96,7 +104,7 @@ function InputFields() {
                   placeholder="  MM"
                   pattern="[0-9]{2}"
                   onBlur={handleFocus}
-              focused= {focused.toString()}
+                  focused={focused.toString()}
                   required
                   min="2"
                   maxLength="2"
@@ -109,14 +117,13 @@ function InputFields() {
                   placeholder="  YY"
                   pattern="[0-9]{2}"
                   onBlur={handleFocus}
-              focused= {focused.toString()}
+                  focused={focused.toString()}
                   required
                   min="2"
                   maxLength="2"
                 ></input>
                 <span className="error-message-exp">Can't be blank</span>
               </div>
-              
             </div>
             <div className="cvc-container">
               <div className="cvc-label">
@@ -130,7 +137,7 @@ function InputFields() {
                 placeholder="  e.g. 123"
                 pattern="[0-9]{3}"
                 onBlur={handleFocus}
-              focused= {focused.toString()}
+                focused={focused.toString()}
                 required
                 min="3"
                 maxLength="3"
@@ -139,13 +146,10 @@ function InputFields() {
             </div>
           </div>
         </div>
-        <div
-          onClick={() => {
-            sendToDb();
-          }}
-          className="confirm-btn"
-        >
-          <div>Confirm</div>
+        <div onClick={()=> {sendToDb()}} className="confirm-btn">
+          <div onClick={func()} className="confirm-btn-wrapper">
+            <div>Confirm</div>
+          </div>
         </div>
       </div>
     </div>

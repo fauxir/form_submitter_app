@@ -112,6 +112,41 @@
 
   /* Input section */
 
+  .thank-you-elem{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .thank-you-wrapper{
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 20rem;
+    height: fit-content;
+  }
+
+  .added-card-details{
+    color: grey;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 1rem;
+  }
+
+  .icon-complete{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 20rem;
+  }
+
   .error-message {
     color: rgb(255, 89, 89);
     font-size: 13px;
@@ -153,6 +188,14 @@
     height: 3rem;
     border-radius: 7px;
     margin-top: 2rem;
+  }
+
+  .confirm-btn-wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .confirm-btn:hover {
@@ -420,6 +463,39 @@
 
   /* Input section */
 
+  .thank-you-elem{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .thank-you-wrapper{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 20rem;
+    height: fit-content;
+  }
+
+  .added-card-details{
+    color: grey;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 1rem;
+  }
+
+  .icon-complete{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 20rem;
+  }
+
   .confirm-btn {
     display: flex;
     justify-content: center;
@@ -430,6 +506,14 @@
     height: 3rem;
     border-radius: 7px;
     margin-top: 2rem;
+  }
+
+  .confirm-btn-wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .error-message {
@@ -467,6 +551,7 @@
     cursor: pointer;
     background-color: rgb(179, 179, 179);
     color: black;
+    box-shadow: 5px 5px 5px rgb(88, 88, 88);
   }
 
   .input-form {
