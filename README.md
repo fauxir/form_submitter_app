@@ -1,6 +1,14 @@
 Responsive card form submit
 
-built with ReactJs and plain Css for styling  
+React JSX CSS	
+
+Expense chart component completed with React, Tailwind CSS, Vite, and Redux for easy state management. The purpose for this project was to provide and easy way to visualise your spending troughout the week. The project was design by me start to finnish. The design was inspired by FrontEndMentor.
+
+•	Responsive, mobile first form design using React framework that simulates data being sent back to the data base.
+•	Flexbox and grid used to make the form responsive 
+•	RegEx used to signal if fields weren’t completed
+•	App broken down in functional and reusable components 
+ 
 
 ![FireShot Capture 020 - Complete purchase - localhost](https://user-images.githubusercontent.com/49500162/194122180-3e351f17-244c-437c-bef3-b53b641a2b6a.png)
 ![FireShot Capture 016 - Complete purchase - localhost](https://user-images.githubusercontent.com/49500162/194122198-f25e3e82-0492-4e3a-ba3d-dbe02578bb49.png)
